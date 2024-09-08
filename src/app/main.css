@@ -1,0 +1,17 @@
+/* global index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Ao utilizar a funcionalidade scroll, remove a barra de scroll */
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
